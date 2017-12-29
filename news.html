@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+<title>News of MU</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="bd">
+<header>
+  <h1>Manchester United</h1>
+  <h2>Old Trafford</h2>
+  <ul>
+    <li><a href="C:\Users\Sanzhar\Documents\New Line Web - developing\index.html">ГЛАВНАЯ</a></li>
+    <li><a href="C:\Users\Sanzhar\Documents\New Line Web - developing\history.html">ИСТОРИЯ</a></li>
+    <li><a href="C:\Users\Sanzhar\Documents\New Line Web - developing\news.html">ГАЛЕРЕЯ</a></li>
+  </ul>
+</header>
+a
+<article>
+<script>
+	var counter = 0;
+	var photo = new Array("1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg");
+
+function next() {
+   if(counter<7)
+  	counter++;
+    document.getElementById('myImage').src = photo[counter];
+}
+function prev() {
+		if(counter>0)
+		counter--;
+    document.getElementById('myImage').src = photo[counter];
+  }
+</script>
+
+<img id="myImage" src="1.jpg" width="700px" height="400px">
+<p>
+<button type="button" onclick="prev()"><p>PREV</p></button>
+<button type="button" onclick="next()"><p>NEXT</p></button>
+</p>
+</article>
+
+<footer>
+  <h3>2017 Year</h3>
+  <a href="http://facebook.com"><img id="demo" src="images/VK.jpg" width="45px" height="45px"></a>
+  <a href="http://vk.com"><img id="demo" src="images/facebook.jpg" width="45px" height="45px"></a>
+  <a href="http://gmail.com"><img id="demo" src="images/gmail.jpg" width="45px" height="45px"></a>
+</footer>
+</body>
+</html>
